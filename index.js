@@ -144,10 +144,8 @@ export default function() {
   // v - root element of the tooltip
   //
   // Returns root node of tip
-  tip.rootElement = function(v) {
-    if (!arguments.length) return rootElement
-    rootElement = v == null ? v : functor(v)
-
+  tip.setRootElement = function(root) {
+    rootElement = root
     return tip
   }
 
